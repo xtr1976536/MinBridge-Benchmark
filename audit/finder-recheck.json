@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-10-22T09:40:08.604858+00:00",
+  "registry": "data/sources.json",
+  "results": [
+    {
+      "id": "finder",
+      "status": "ok",
+      "format": "hf_rows",
+      "license_status": "confirmed",
+      "sha256": "d125c476ba57531cb882300eec18605d6ac6c4bb5b32bccb92d62b5eb59cb4be",
+      "bytes": 27547580,
+      "expected_records": 5703,
+      "records": 5703,
+      "fields": [
+        "_id",
+        "answer",
+        "category",
+        "reasoning",
+        "references",
+        "text",
+        "type"
+      ],
+      "operation_types": {
+        "Subtract": 111,
+        "Compositional": 440,
+        "None": 4820,
+        "Addition": 75,
+        "Division": 128,
+        "Multiplication": 121,
+        "Subtraction": 8
+      },
+      "reasoning_flag": {
+        "True": 1085,
+        "False": 4618
+      },
+      "unique_questions": 5703
+    }
+  ]
+}

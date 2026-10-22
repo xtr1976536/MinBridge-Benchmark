@@ -1,0 +1,319 @@
+{
+  "checked_at_utc": "2026-10-22T08:41:46.715207+00:00",
+  "registry": "data/sources.json",
+  "results": [
+    {
+      "id": "finqa-test",
+      "status": "ok",
+      "format": "json",
+      "license_status": "confirmed",
+      "sha256": "831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc",
+      "bytes": 14395143,
+      "expected_records": 1147,
+      "records": 1147,
+      "fields": [
+        "filename",
+        "id",
+        "post_text",
+        "pre_text",
+        "qa",
+        "table",
+        "table_ori",
+        "table_retrieved",
+        "table_retrieved_all",
+        "text_retrieved",
+        "text_retrieved_all"
+      ],
+      "missing_gold_program": 0
+    },
+    {
+      "id": "tatqa-test-gold",
+      "status": "ok",
+      "format": "json",
+      "license_status": "confirmed",
+      "sha256": "c4d08418359c1d76468dec420ee748a37f48c06b63cb8ec2766f19d5d314b597",
+      "bytes": 2167546,
+      "expected_records": 277,
+      "records": 277,
+      "fields": [
+        "paragraphs",
+        "questions",
+        "table"
+      ],
+      "nested_questions": 1663,
+      "answer_types": {
+        "span": 714,
+        "multi-span": 210,
+        "arithmetic": 699,
+        "count": 40
+      }
+    },
+    {
+      "id": "finance-reasoning-easy",
+      "status": "ok",
+      "format": "json",
+      "license_status": "confirmed",
+      "sha256": "53890ee130f33759cf53cc71943248671e27e6035e75e4234373587784e56dd9",
+      "bytes": 4052714,
+      "expected_records": 1000,
+      "records": 1000,
+      "fields": [
+        "context",
+        "difficulty",
+        "ground_truth",
+        "level",
+        "python_solution",
+        "question",
+        "question_id",
+        "source",
+        "statistics"
+      ],
+      "source_families": {
+        "CodeTAT": 189,
+        "CodeFinQA": 559,
+        "FinanceMath": 34,
+        "FinanceReasoning": 212,
+        "FinCode": 6
+      },
+      "missing_python_solution": 0
+    },
+    {
+      "id": "finance-reasoning-medium",
+      "status": "ok",
+      "format": "json",
+      "license_status": "confirmed",
+      "sha256": "98098f9b54c0a8c6192b3f3f8b7afe514b0fef2b0972ff0fe63ff43202c20e22",
+      "bytes": 3610611,
+      "expected_records": 1000,
+      "records": 1000,
+      "fields": [
+        "article_title",
+        "context",
+        "difficulty",
+        "function",
+        "function_id",
+        "ground_truth",
+        "level",
+        "python_solution",
+        "question",
+        "question_id",
+        "source",
+        "statistics"
+      ],
+      "source_families": {
+        "FinanceReasoning": 540,
+        "FinanceMath": 104,
+        "FinCode": 27,
+        "CodeTAT": 99,
+        "CodeFinQA": 230
+      },
+      "missing_python_solution": 0
+    },
+    {
+      "id": "finance-reasoning-hard",
+      "status": "ok",
+      "format": "json",
+      "license_status": "confirmed",
+      "sha256": "ca8c055ef104176131da2e0f533897350cde3b93c4754575b09c7c7fbd046d9f",
+      "bytes": 874349,
+      "expected_records": 238,
+      "records": 238,
+      "fields": [
+        "context",
+        "difficulty",
+        "ground_truth",
+        "level",
+        "python_solution",
+        "question",
+        "question_id",
+        "source",
+        "statistics"
+      ],
+      "source_families": {
+        "CodeFinQA": 6,
+        "FinanceReasoning": 156,
+        "FinanceMath": 62,
+        "FinCode": 14
+      },
+      "missing_python_solution": 0
+    },
+    {
+      "id": "finder",
+      "status": "error",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "id": "cfqa-company-train",
+      "status": "ok",
+      "format": "json",
+      "license_status": "confirmed",
+      "sha256": "67c13264ed20601f4ace8004d575fb7e0b504a883d17fdb373c90deaa8c461da",
+      "bytes": 3224914,
+      "expected_records": 7250,
+      "records": 7250,
+      "fields": [
+        "id",
+        "公司",
+        "答案",
+        "答案出自",
+        "股票代码",
+        "问题"
+      ],
+      "empty_answers": 323,
+      "reported_not_found_answers": 1367,
+      "empty_page_evidence": 2494
+    },
+    {
+      "id": "cfqa-company-dev",
+      "status": "ok",
+      "format": "json",
+      "license_status": "confirmed",
+      "sha256": "54e814531104ce6932b83608bb16847a0f258b151b44fe60242dfdfd6f7f0ca6",
+      "bytes": 448977,
+      "expected_records": 961,
+      "records": 961,
+      "fields": [
+        "id",
+        "公司",
+        "答案",
+        "答案出自",
+        "股票代码",
+        "问题"
+      ],
+      "empty_answers": 36,
+      "reported_not_found_answers": 123,
+      "empty_page_evidence": 265
+    },
+    {
+      "id": "cfqa-company-test",
+      "status": "ok",
+      "format": "json",
+      "license_status": "confirmed",
+      "sha256": "e4c08332a1f6aada430ac94fe62106fd557c3d80cd68c495118412bb7704bc7d",
+      "bytes": 995666,
+      "expected_records": 2100,
+      "records": 2100,
+      "fields": [
+        "id",
+        "公司",
+        "答案",
+        "答案出自",
+        "股票代码",
+        "问题"
+      ],
+      "empty_answers": 64,
+      "reported_not_found_answers": 579,
+      "empty_page_evidence": 720
+    },
+    {
+      "id": "realfin-english",
+      "status": "ok",
+      "format": "csv",
+      "license_status": "confirmed",
+      "sha256": "fc3ed2aaddde61319d2ef4c3024c1ce803bfffd5af78cc9e412dd9b9fdf829a8",
+      "bytes": 135166,
+      "expected_records": 367,
+      "records": 367,
+      "fields": [
+        "Correct Answer",
+        "ID",
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Question",
+        "Question_Type"
+      ]
+    },
+    {
+      "id": "realfin-chinese",
+      "status": "ok",
+      "format": "csv",
+      "license_status": "confirmed",
+      "sha256": "92e53b40e3b95ee0b90f2cd33865c8ae68f1896c3170bd470cb7ab6a857d2f08",
+      "bytes": 54709,
+      "expected_records": 175,
+      "records": 175,
+      "fields": [
+        "Correct Answer",
+        "ID",
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D",
+        "Question",
+        "Question_Type"
+      ]
+    },
+    {
+      "id": "finsearchcomp",
+      "status": "ok",
+      "format": "json",
+      "license_status": "confirmed",
+      "sha256": "6437a6dae907ec81002bd817dafc26c3e46e6b6edfde700f22645b1e2aa208c4",
+      "bytes": 5948881,
+      "expected_records": 635,
+      "records": 635,
+      "fields": [
+        "judge_prompt_template",
+        "judge_system_prompt",
+        "label",
+        "prompt",
+        "prompt_id",
+        "response_reference"
+      ]
+    },
+    {
+      "id": "vals-public",
+      "status": "ok",
+      "format": "csv",
+      "license_status": "confirmed",
+      "sha256": "bb33b8dbf21cf4b4981011057bdbf043cc90ebc1ae1f562b4f680dfacff89b3d",
+      "bytes": 49660,
+      "expected_records": 50,
+      "records": 50,
+      "fields": [
+        "Answer",
+        "Expert time (mins)",
+        "Question",
+        "Question Type",
+        "Rubric"
+      ]
+    },
+    {
+      "id": "bigfinance-public",
+      "status": "ok",
+      "format": "jsonl",
+      "license_status": "confirmed",
+      "sha256": "0c1b06b2cf80ddc85eec9e06913abae33a5ff4e27f936cb510dd6286083171c5",
+      "bytes": 111875,
+      "expected_records": 50,
+      "records": 50,
+      "fields": [
+        "benchmark_canary",
+        "do_not_train",
+        "evaluation_only",
+        "id",
+        "query",
+        "reference_answer",
+        "rubric"
+      ]
+    },
+    {
+      "id": "gbfr-finqa-negatives",
+      "status": "skipped_unknown_license"
+    },
+    {
+      "id": "gbfr-tatqa-negatives",
+      "status": "skipped_unknown_license"
+    },
+    {
+      "id": "gbfr-finance-reasoning-negatives",
+      "status": "skipped_unknown_license"
+    },
+    {
+      "id": "financebench-public",
+      "status": "skipped_unknown_license"
+    }
+  ]
+}
