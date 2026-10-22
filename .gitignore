@@ -1,3 +1,4 @@
 data/raw/
+data/local_audit/
 __pycache__/
 *.py[cod]

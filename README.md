@@ -10,7 +10,7 @@ The attached MinBridge proposal requires three distinct kinds of evidence:
 2. Controlled unanswerable twins with a clear missing fact or invalid relation, plus minimal missing-data certificates.
 3. Independent real-analyst questions with answerability labels and expert-reviewed reasoning evidence.
 
-The first category is available now. The second can be built from public answerable datasets, but requires proof-based filtering and human review. The third is only partly available: FinDER provides authentic financial search queries with answerability-like `reasoning` labels and filing evidence, but its tasks are mostly open-book RAG and not tied to numeric gold programs or minimal certificates. No public dataset located directly provides all requested annotations.
+The first category is available now. The second can be built from public answerable datasets, but requires proof-based filtering and human review. The third is partly available: FinDER provides authentic financial search queries and filing evidence, but its `reasoning` flag is not an answerability label and its tasks are not tied to numeric gold programs or minimal certificates. A separate audit of real-analyst sources is in [ANALYST_QUESTIONS.md](ANALYST_QUESTIONS.md).
 
 ## Access-checked sources
 
@@ -40,7 +40,7 @@ The GBFR paper itself is ACL 2026 Long Paper 1273: [Anthology page](https://acla
 | Minimal missing-data certificate | No | Derive from the gold program's leaf operands, then minimize against alternative valid paths and available context. A single gold program is insufficient to prove global minimality when alternate derivations exist |
 | Relation provenance tiers T0-T4 | No | Publish a sourced, frozen formula/definition inventory. Use primary standards where accessible and separately sourced textbooks. Mark definitions with source, jurisdiction, date and permitted scope; sensitivity-test contested T3/T4 boundaries |
 | Minimal sufficient sets and counterfactual relation credit for SCPO | No | Generate from annotated formula hypergraphs and exhaustive/minimal-set search on small examples; manual validation required. Ensure the target's identifiability matches the operational solver semantics |
-| Independent real analyst test, about 300 questions | Closest: FinDER (5,703 real queries), FinanceBench (150 questions) | FinDER is best query-style source but not numeric-program aligned; FinanceBench is numerical and evidence rich but small and unlicensed for redistribution. Use FinDER/FinanceBench under their own terms for evaluation only, then obtain permission or collect original questions via a documented analyst study |
+| Independent real analyst test, about 300 questions | Closest: FinDER (5,703 real queries, of which 883 carry a non-`None` operation type) and actual earnings-call analyst speech | FinDER is the best realistic query source, but its `reasoning` flag is not answerability and its operation types need review; earnings-call questions lack numerical gold programs. See the focused audit for a practical 300-question path and explicit exclusions |
 | Cross-domain abstention generalization | Partial | UMWP is available and paired but is general math; another source such as NeoQA tests evidence sufficiency but fictional non-numeric news and has a non-derivative license. Use only as a separate external task, not as direct MinBridge training data |
 
 ## Recommended benchmark construction
