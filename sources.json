@@ -1,0 +1,88 @@
+[
+  {
+    "name": "FinQA",
+    "url": "https://raw.githubusercontent.com/czyssrs/FinQA/main/dataset/test.json",
+    "kind": "json",
+    "direct_download_verified": true,
+    "expected_count": 1147,
+    "license_note": "FinQA site states CC BY 4.0 for dataset; GitHub repository code has MIT. Underlying filings remain third-party materials."
+  },
+  {
+    "name": "TAT-QA",
+    "url": "https://raw.githubusercontent.com/NExTplusplus/TAT-QA/master/dataset_raw/tatqa_dataset_test_gold.json",
+    "kind": "json",
+    "direct_download_verified": true,
+    "license_note": "Official repository has MIT license; financial report contents are third-party materials."
+  },
+  {
+    "name": "FinanceReasoning Easy",
+    "url": "https://raw.githubusercontent.com/BUPT-Reasoning/FinanceReasoning/master/data/FinanceReasoning/easy.json",
+    "kind": "json",
+    "direct_download_verified": true,
+    "expected_count": 1000,
+    "license_note": "Data CC BY-NC-SA 4.0. Upstream notes possible restrictions on raw source reports."
+  },
+  {
+    "name": "FinanceReasoning Medium",
+    "url": "https://raw.githubusercontent.com/BUPT-Reasoning/FinanceReasoning/master/data/FinanceReasoning/medium.json",
+    "kind": "json",
+    "direct_download_verified": true,
+    "expected_count": 1000,
+    "license_note": "Data CC BY-NC-SA 4.0. Upstream notes possible restrictions on raw source reports."
+  },
+  {
+    "name": "FinanceReasoning Hard",
+    "url": "https://raw.githubusercontent.com/BUPT-Reasoning/FinanceReasoning/master/data/FinanceReasoning/hard.json",
+    "kind": "json",
+    "direct_download_verified": true,
+    "expected_count": 238,
+    "license_note": "Data CC BY-NC-SA 4.0. Upstream notes possible restrictions on raw source reports."
+  },
+  {
+    "name": "GBFR FinQA negative seed",
+    "url": "https://raw.githubusercontent.com/aolaoban/Graph-Bounded_Financial_Reasoning/main/data/FinQA/finqa_nsdata.json",
+    "kind": "json",
+    "direct_download_verified": true,
+    "expected_count": 97,
+    "license_note": "No repository license declared. Inspect/reproduce with attribution; obtain permission before redistribution."
+  },
+  {
+    "name": "GBFR TAT-QA negative seed",
+    "url": "https://raw.githubusercontent.com/aolaoban/Graph-Bounded_Financial_Reasoning/main/data/TAT-QA/tatqa_nsdata.json",
+    "kind": "json",
+    "direct_download_verified": true,
+    "expected_count": 151,
+    "license_note": "No repository license declared. Inspect/reproduce with attribution; obtain permission before redistribution."
+  },
+  {
+    "name": "GBFR FinanceReasoning negative seed",
+    "url": "https://raw.githubusercontent.com/aolaoban/Graph-Bounded_Financial_Reasoning/main/data/FinanceReasoning/financereasoning_nsdata.json",
+    "kind": "json",
+    "direct_download_verified": true,
+    "expected_count": 412,
+    "license_note": "No repository license declared. Upstream FinanceReasoning itself is CC BY-NC-SA 4.0; obtain permission for GBFR-specific transformations."
+  },
+  {
+    "name": "FinanceBench open sample",
+    "url": "https://raw.githubusercontent.com/patronus-ai/financebench/main/data/financebench_open_source.jsonl",
+    "kind": "jsonl",
+    "direct_download_verified": true,
+    "expected_count": 150,
+    "license_note": "No license declared in repository. Do not redistribute until terms are confirmed."
+  },
+  {
+    "name": "FinDER",
+    "url": "https://huggingface.co/datasets/Linq-AI-Research/FinDER",
+    "kind": "huggingface",
+    "direct_download_verified": true,
+    "expected_count": 5703,
+    "license_note": "Dataset card declares CC BY-NC 4.0."
+  },
+  {
+    "name": "UMWP",
+    "url": "https://raw.githubusercontent.com/Yuki-Asuuna/UMWP/main/data/StandardDataset.jsonl",
+    "kind": "jsonl",
+    "direct_download_verified": true,
+    "license_note": "No license declared in data repository. Cross-domain reference only; check rights before redistribution."
+  }
+]
